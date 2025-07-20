@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbou>nded:wght@200..900&display=swap');
 
     body {
         font-family: "Unbounded", sans-serif;
@@ -153,15 +153,16 @@
 
     <!-- hero start  -->
     <section class="bg-black flex justify-center items-center pt-5 pb-8 relative h-screen translate-y-16">
-        <img class="max-w-[634px] w-full absolute" src="./img/hero/hero.png" alt="hero">
+        <img class="max-w-[634px] w-full absolute md:block hidden" src="./img/hero/hero.webp" alt="hero">
+         <img class="max-w-[634px] w-full absolute md:hidden" src="./img/hero/hero_mobile.webp" alt="hero">
         <div class="absolute text-white text-center px-8">
-            <p class="md:text-base text-[13.2px] leading-[20.9px] md:mb-10 mb-3.5">We guarantee 100% money back if not
+            <p class="md:text-base text-[13.2px] leading-[20.9px] md:mb-10 mb-3.5">We guarantee 100% money <br class="md:hidden block" > back if not
                 achieved</p>
             <h1 class="text-[#FFE9A2] font-bold text-[40px] leading-[100%] mb-6 md:block hidden">Get to the TOP-3 <br>
                 in the App Store</h1>
             <h1 class="text-[#FFE9A2] font-bold text-[26px] leading-[34.1px] mb-3 md:hidden block uppercase">Get to the
                 TOP-3 in the App Store</h1>
-            <p class="Manrope text-sm md:mb-[50px] mb-9">in one country for one month with at least 50 keywords</p>
+            <p class="Manrope md:text-sm text-[11px] md:mb-[50px] mb-9">in one country for one month with at least 50 keywords</p>
             <button class="custom_btn md:!text-base text-[13px]">Explore</button>
         </div>
     </section>
